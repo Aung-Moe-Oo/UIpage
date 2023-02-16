@@ -1,0 +1,80 @@
+.container {
+  width: 1000px;
+  overflow: hidden;
+  position: relative;
+}
+.container h3 {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+.card {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border-bottom: 1px solid rgba(185, 185, 185, 0.308);
+  box-shadow: 0 5px 10px 0 rgba(185, 185, 185, 0.308);
+}
+.card img {
+  width: 100px;
+  object-fit: cover;
+  padding: 2rem 0;
+  border-bottom: 1px solid #f5f6f9;
+}
+.card .desc {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 1rem 0;
+  gap: 14px;
+  font-size: 14px;
+}
+.card .desc h4 {
+  font-size: 12px;
+  font-weight: bold;
+}
+.reward {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reward p {
+  color: #3b75c9;
+  font-weight: 800;
+  font-size: 24px;
+}
+.reward span {
+  font-size: 14px;
+}
+.reward .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #3b75c9;
+  cursor: pointer;
+}
+.reward .icon svg {
+  color: #fff;
+}
+.card .extra {
+  display: none;
+  transition: all 0.5s linear;
+}
+.card .extra h5 {
+  padding: 1rem 0;
+  font-size: 10px;
+}
+.card:hover .extra {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 300px;
+  }
+}
